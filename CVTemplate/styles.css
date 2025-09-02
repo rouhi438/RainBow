@@ -5,7 +5,7 @@
 }
 body {
   height: 1200px;
-  font-family: "serif";
+  font-family: serif;
 }
 @media print {
   body {
@@ -88,6 +88,7 @@ h2 {
   background-color: rgb(64, 224, 208);
   margin: 2px;
   font-size: 13px;
+  font-family: serif;
 }
 .contact div {
   padding-left: 10px;
@@ -126,8 +127,9 @@ h2 {
   margin-left: 30px;
   width: 220px;
   background-color: rgb(64, 224, 208);
-  font-size: 14px;
+  font-size: 15px;
   overflow: hidden;
+  font-family: serif;
 }
 .education h2 {
   margin-bottom: 15px;
@@ -176,19 +178,6 @@ p {
 .right h2 {
   color: rgb(64, 224, 208);
 }
-.job i {
-  font-size: 10px;
-}
-.job input {
-  padding: 5px;
-  font-size: 16px;
-  width: 100mm;
-  font-weight: bold;
-}
-#job-desc {
-  width: 129mm;
-  padding: 3px 0;
-}
 .line {
   height: 20px;
   width: 100%;
@@ -205,6 +194,7 @@ p {
   background-color: rgb(64, 224, 208);
   clip-path: polygon(13% 0, 100% 0%, 100% 100%, 0% 100%);
 }
+/*=========SUMMARY ==================*/
 .summary {
   width: 100%;
   height: 180px;
@@ -214,6 +204,7 @@ p {
   line-height: 25px;
   text-align: justify;
 }
+/*=============Experience ========*/
 .experience {
   width: 100%;
   height: 180px;
@@ -225,7 +216,24 @@ p {
   margin-top: 10px;
   margin-bottom: 15px;
 }
-/*==========================*/
+.job i {
+  font-size: 10px;
+}
+.job input {
+  padding: 5px;
+  font-size: 16px;
+  width: 100mm;
+  font-weight: bold;
+  font-family: serif;
+}
+#job-desc,
+.jobDesc {
+  width: 129mm;
+  padding: 3px 0;
+  font-family: serif;
+}
+
+/*============Languages==============*/
 .languages {
   width: 100%;
   height: 220px;
@@ -242,6 +250,7 @@ p {
   width: 100mm;
   padding-top: 3px;
   font-size: 15px;
+  font-family: serif;
 }
 .second-languages {
   display: flex;
@@ -252,10 +261,12 @@ p {
   font-weight: bold;
   margin-bottom: 5px;
   margin-top: 15px;
+  font-family: serif;
 }
 #level {
   font-size: 13px;
   width: 200px;
+  font-family: serif;
 }
 .english p,
 .danish p,
@@ -273,6 +284,7 @@ p {
 .deg {
   background-color: rgb(210, 208, 208);
 }
+/*===============Hobby ==============*/
 .hobby h2 {
   margin-top: 30px;
 }
@@ -281,6 +293,7 @@ p {
   height: 60mm;
   margin-top: 10px;
   font-size: 15px;
+  font-family: serif;
 }
 /*============degree BG to use in JS ==========*/
 .degBG {
