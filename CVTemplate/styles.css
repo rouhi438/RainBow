@@ -4,8 +4,11 @@
   box-sizing: border-box;
 }
 body {
-  height: 1200px;
+  height: 1170px;
   font-family: serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 @media print {
   body {
@@ -53,12 +56,17 @@ textarea {
 }
 /*==========image===============*/
 .image {
+  position: relative;
   width: 100%;
   height: 240px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+.image label {
+  position: absolute;
+}
+
 svg {
   width: 200px;
   height: 200px;
@@ -158,7 +166,7 @@ p {
 }
 .name input {
   width: 400px;
-  font-size: 70px;
+  font-size: 50px;
   font-weight: bold;
   margin: 2px;
   padding-left: 15px;
@@ -207,7 +215,7 @@ p {
 /*=============Experience ========*/
 .experience {
   width: 100%;
-  height: 180px;
+  height: 210px;
 }
 .experience h4 {
   margin-top: 10px;
@@ -226,8 +234,7 @@ p {
   font-weight: bold;
   font-family: serif;
 }
-#job-desc,
-.jobDesc {
+#job-desc {
   width: 129mm;
   padding: 3px 0;
   font-family: serif;
@@ -247,7 +254,7 @@ p {
   width: 120px;
 }
 .first-language input {
-  width: 100mm;
+  width: 60mm;
   padding-top: 3px;
   font-size: 15px;
   font-family: serif;
@@ -289,12 +296,16 @@ p {
   margin-top: 30px;
 }
 #hobby {
-  width: 132mm;
+  width: 130mm;
   height: 60mm;
   margin-top: 10px;
   font-size: 15px;
   font-family: serif;
 }
+.hobby textarea::placeholder {
+  text-align: justify;
+}
+
 /*============degree BG to use in JS ==========*/
 .degBG {
   background-color: rgb(64, 224, 208);

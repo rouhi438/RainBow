@@ -11,7 +11,7 @@ input.addEventListener("change", function () {
     reader.onload = function (e) {
       preview.src = e.target.result;
       preview.style.display = "block"; // عکس نشون داده میشه
-      label.style.display = "none"; // SVG مخفی میشه
+      label.style.opacity = 0; // SVG مخفی میشه
     };
     reader.readAsDataURL(file);
   }
