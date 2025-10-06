@@ -17,7 +17,7 @@ function randomColor() {
 }
 setInterval(() => {
   listTitel.style.color = randomColor();
-}, 8000);
+}, 8500);
 
 //defining empty array for adding tasks in the local storage to prevent of removing
 let items;
@@ -203,3 +203,4 @@ function showTask() {
     listToDo.appendChild(newLi);
   }
 }
+showTask();
