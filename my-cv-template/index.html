@@ -1,0 +1,320 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NEW-CV-Template</title>
+    <link rel="stylesheet" href="styless.css" />
+    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <main id="cv-container">
+      <header id="header">
+        <h1 class="name">Abbas Rouhi</h1>
+        <nav>
+          <ul class="links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about-me">About me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#my-projects">Projects</a></li>
+            <li><a href="#contact">Contact me</a></li>
+          </ul>
+        </nav>
+        <div class="icon-bar hideen">
+          <input id="toggle-icon" type="checkbox" class="hidden" />
+          <label for="toggle-icon" class="toggle-icon"
+            ><i class="fa-solid fa-bars"></i
+          ></label>
+        </div>
+      </header>
+      <div class="hidden-bar">
+        <ul class="hidden-links">
+          <li><a href="#home" class="hidden-link">Home</a></li>
+          <li><a href="#about-me" class="hidden-link">About me</a></li>
+          <li><a href="#skills" class="hidden-link">Skills</a></li>
+          <li><a href="#my-projects" class="hidden-link">Projects</a></li>
+          <li><a href="#contact" class="hidden-link">Contact me</a></li>
+        </ul>
+      </div>
+      <section class="hero" id="home">
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="2000">
+          <h2 id="line1">Welcome To My Portfolio</h2>
+          <p id="line2">I'm Abbas Rouhi, a passionate web developer!</p>
+          <div class="btn-holder">
+            <button class="cv-btn">My CV</button>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="about-me"
+        id="about-me"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
+        <h3 class="about-title">About Me</h3>
+        <div class="about-content">
+          <p class="about-text">
+            I’m a junior web developer passionate about building real web
+            applications. I have gained experience through HackYourFuture,
+            focusing on front-end development while also working on projects
+            involving back-end and databases. During the program, I developed
+            several small projects, including interactive games and
+            applications, which helped me strengthen my programming skills,
+            problem-solving abilities, and teamwork experience. I’m eager to
+            join a development team, contribute to real projects, and continue
+            growing as a developer. Open to Junior Developer roles and
+            internships.
+          </p>
+          <img class="about-img" src="/asset/newImage.jpg" alt="" />
+        </div>
+      </section>
+      <section id="skills" data-aos="zoom-in" data-aos-duration="2000">
+        <h3 class="skills-title">My Skills</h3>
+        <div class="skills-section">
+          <!-- Frontend Card -->
+          <div class="skills-category frontend">
+            <h4><i class="fa-solid fa-code"></i> Frontend Development</h4>
+
+            <div class="skill">
+              <h5>
+                <span class="skill-name">
+                  <i class="fa-brands fa-html5"></i> HTML5
+                </span>
+                <span class="skill-percentage">75%</span>
+              </h5>
+              <div class="skill-bar">
+                <div class="skill-level html" data-progress="75"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <h5>
+                <span class="skill-name">
+                  <i class="fa-brands fa-css3-alt"></i> CSS3
+                </span>
+                <span class="skill-percentage">65%</span>
+              </h5>
+              <div class="skill-bar">
+                <div class="skill-level css" data-progress="65"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <h5>
+                <span class="skill-name">
+                  <i class="fa-brands fa-js"></i> JavaScript
+                </span>
+                <span class="skill-percentage">45%</span>
+              </h5>
+              <div class="skill-bar">
+                <div class="skill-level js" data-progress="45"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <h5>
+                <span class="skill-name">
+                  <i class="fa-brands fa-react"></i> React
+                </span>
+                <span class="skill-percentage">40%</span>
+              </h5>
+              <div class="skill-bar">
+                <div class="skill-level react" data-progress="40"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <h5>
+                <span class="skill-name">
+                  <i class="fa-brands fa-github gitHub"></i> Git & GitHub
+                </span>
+                <span class="skill-percentage">60%</span>
+              </h5>
+              <div class="skill-bar">
+                <div class="skill-level git" data-progress="60"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Backend Card -->
+          <div class="skills-category backend">
+            <h4><i class="fa-solid fa-server"></i> Backend Development</h4>
+
+            <div class="skill">
+              <h5>
+                <span class="skill-name">
+                  <i class="fa-brands fa-node-js"></i> Node.js
+                </span>
+                <span class="skill-percentage">65%</span>
+              </h5>
+              <div class="skill-bar">
+                <div class="skill-level node" data-progress="65"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <h5>
+                <span class="skill-name">
+                  <i class="fa-solid fa-server"></i> Express.js
+                </span>
+                <span class="skill-percentage">55%</span>
+              </h5>
+              <div class="skill-bar">
+                <div class="skill-level express" data-progress="55"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <h5>
+                <span class="skill-name">
+                  <i class="fa-solid fa-database"></i> SQL
+                </span>
+                <span class="skill-percentage">50%</span>
+              </h5>
+              <div class="skill-bar">
+                <div class="skill-level sql" data-progress="50"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <h5>
+                <span class="skill-name">
+                  <i class="fa-solid fa-leaf"></i> MongoDB
+                </span>
+                <span class="skill-percentage">45%</span>
+              </h5>
+              <div class="skill-bar">
+                <div class="skill-level mongodb" data-progress="45"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <h5>
+                <span class="skill-name">
+                  <i class="fa-solid fa-bolt"></i> Postman
+                </span>
+                <span class="skill-percentage">70%</span>
+              </h5>
+              <div class="skill-bar">
+                <div class="skill-level postman" data-progress="70"></div>
+              </div>
+            </div>
+
+            <div class="skill">
+              <h5>
+                <span class="skill-name">
+                  <i class="fa-solid fa-cloud"></i> REST APIs
+                </span>
+                <span class="skill-percentage">60%</span>
+              </h5>
+              <div class="skill-bar">
+                <div class="skill-level rest" data-progress="60"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="my-projects" id="my-projects">
+        <h3 class="myproject-title">My Projects</h3>
+        <div class="projects-container">
+          <div class="card" data-aos="zoom-in" data-aos-duration="2000">
+            <h4 class="card-title">RollingDice</h4>
+            <p class="tech-name">Css, javaScript</p>
+            <a
+              href="https://rouhi438.github.io/GameProjects/RollingDice/"
+              target="_blank"
+              class="card-btn"
+              >Demo</a
+            >
+            <a
+              href="https://github.com/rouhi438/GameProjects/tree/main/RollingDice"
+              target="_blank"
+              class="card-btn"
+              >Code</a
+            >
+          </div>
+          <div class="card" data-aos="zoom-in" data-aos-duration="2000">
+            <h4 class="card-title">Memory Game</h4>
+            <p class="tech-name">Css, javaScript</p>
+            <a
+              href="https://rouhi438.github.io/hackyourfuture-web-development/foundation-project/"
+              target="_blank"
+              class="card-btn"
+              >Demo</a
+            >
+            <a
+              href="https://github.com/rouhi438/hackyourfuture-web-development/tree/main/foundation-project"
+              target="_blank"
+              class="card-btn"
+              >Code</a
+            >
+          </div>
+          <div class="card" data-aos="zoom-in" data-aos-duration="2000">
+            <h4 class="card-title">Recipe App</h4>
+            <p class="tech-name">Css, Vanilla JS, Node.JS, DataBase</p>
+            <a
+              href="https://rouhi438.github.io/recipeApp/"
+              target="_blank"
+              class="card-btn"
+              >Demo</a
+            >
+            <a
+              href="https://github.com/rouhi438/recipeApp"
+              target="_blank"
+              class="card-btn"
+              >Code</a
+            >
+          </div>
+          <div class="card" data-aos="zoom-in" data-aos-duration="2000">
+            <h4 class="card-title">TicTakToe</h4>
+            <p class="tech-name">Css, javaScript</p>
+            <a
+              href="https://rouhi438.github.io/LoginForms/LoginForm3/"
+              target="_blank"
+              class="card-btn"
+              >Demo</a
+            >
+            <a
+              href="https://github.com/rouhi438/LoginForms/tree/main/LoginForm"
+              target="_blank"
+              class="card-btn"
+              >Code</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h4 class="contact-title">Contact Me</h4>
+        <div class="contact-container">
+          <a href="https://github.com/rouhi438" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a href="https://linkedin.com/in/rouhi438" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://codepen.io/rouhi438" target="_blank"
+            ><i class="fa-brands fa-codepen"></i
+          ></a>
+          <a href="https://freecodecamp.org/rouhi438" target="_blank"
+            ><i class="fa-brands fa-free-code-camp"></i
+          ></a>
+        </div>
+        <hr />
+        <p class="copyright">© 2025 Abbas Rouhi. All rights reserved.</p>
+      </section>
+    </main>
+    <script src="script.js" type="module"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: false,
+        mirror: true,
+      });
+    </script>
+  </body>
+</html>
