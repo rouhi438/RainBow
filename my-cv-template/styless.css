@@ -353,21 +353,28 @@ section {
     background: #f1502f;
 }
 
+.frontend .skill-level.next {
+    background: #fff
+}
+
 /* Backend Colors */
 .backend .skill-level.node {
     background: #68a063;
 }
 
 .backend .skill-level.express {
-    background: #000;
+    background: #4db33d;
 }
 
 .backend .skill-level.sql {
     background: #00758f;
 }
 
-.backend .skill-level.mongodb {
-    background: #4db33d;
+
+.next-js {
+    width: 20px;
+    border: 0.5px solid #fff;
+    border-radius: 50%;
 }
 
 .backend .skill-level.postman {
