@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #040404;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: "Segoe UI", "Roboto", "Helvetica Neue", sans-serif;
+    padding: 24px;
+}
+
+/* A4 size */
+.a4 {
+    width: 210mm;
+    min-height: 297mm;
+    background-color: white;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    margin: 0 auto;
+    padding: 12mm 15mm;
+}
+
+h1 {
+    font-size: 42px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1e3a8a;
+    border-bottom: 2px solid #1e3a8a;
+    padding-bottom: 4px;
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+.subhead {
+    font-size: 18px;
+    font-weight: 500;
+    color: #334155;
+    margin-bottom: 20px;
+    border-left: 3px solid #1e3a8a;
+    padding-left: 10px;
+}
+
+.two-col-grid {
+    display: grid;
+    grid-template-columns: 1fr 2.2fr;
+    gap: 24px;
+    margin-top: 8px;
+}
+
+.left-panel {
+    border-right: 1px solid #cbd5e1;
+    padding-right: 18px;
+}
+
+.right-panel {
+    padding-left: 4px;
+}
+
+.contact-info p {
+    margin: 8px 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 11px;
+    color: #1e293b;
+    flex-wrap: wrap;
+}
+
+.contact-info i {
+    width: 22px;
+    color: #1e3a8a;
+    font-size: 14px;
+}
+
+.image-placeholder {
+    margin: 20px 0 16px 0;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 8px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.real-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    object-fit: cover;
+    max-height: 160px;
+}
+
+.skills-list {
+    list-style: none;
+    margin-top: 8px;
+}
+
+.edu-place {
+    font-size: 13px;
+    margin: 3px 0;
+}
+
+.skills-list li {
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='%231e3a8a'%3E%3Ccircle cx='12' cy='12' r='6'/%3E%3C/svg%3E") left center no-repeat;
+    padding-left: 18px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.4;
+    background-size: 10px;
+    color: #0c4a6e;
+}
+
+.skill-detail {
+    font-size: 11px;
+    padding-left: 20px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.project-item,
+.course-item {
+    margin-bottom: 20px;
+}
+
+.project-name,
+.course-name {
+    font-weight: 700;
+    font-size: 16px;
+    color: #0c4a6e;
+}
+
+.project-framework,
+.course-date {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: 500;
+    color: #334155;
+    margin: 4px 0 6px 0;
+}
+
+.project-desc,
+.course-desc {
+    font-size: 13px;
+    color: #1e293b;
+    line-height: 1.45;
+    margin-bottom: 6px;
+    text-align: justify;
+}
+
+.about-text {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #1e293b;
+    margin: 12px 0;
+    text-align: justify;
+}
+
+.hyf {
+    color: #1e3a8a;
+    font-weight: bold;
+}
+
+.edu-item {
+    margin-bottom: 12px;
+}
+
+.edu-title {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.edu-date {
+    font-size: 12px;
+    color: #475569;
+}
+
+hr {
+    margin: 12px 0;
+    border: 0;
+    height: 1px;
+    background: #e2e8f0;
+}
+
+@media print {
+    body {
+        background-color: white;
+        padding: 0;
+        margin: 0;
+    }
+
+    .a4 {
+        box-shadow: none;
+        padding: 10mm;
+        width: 100%;
+        min-height: auto;
+    }
+
+    .two-col-grid {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .two-col-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    .left-panel {
+        border-right: none;
+    }
+
+    body {
+        padding: 12px;
+    }
+
+    .a4 {
+        width: 100%;
+        padding: 6mm;
+    }
+
+    .real-image {
+        max-height: 260px;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+@media print {
+    body {
+        background-color: white;
+        padding: 0;
+        margin: 0;
+    }
+
+    .a4 {
+        box-shadow: none;
+        width: 100%;
+        height: auto;
+        min-height: 0;
+        page-break-after: avoid;
+        page-break-inside: avoid;
+    }
+
+    h2 {
+        page-break-after: avoid;
+    }
+
+    .project-item,
+    .course-item,
+    .edu-item,
+    .skills-list li,
+    .about-text {
+        page-break-inside: avoid;
+    }
+
+    .two-col-grid {
+        gap: 12px;
+    }
+
+    .contact-info p {
+        font-size: 10px;
+        margin: 4px 0;
+    }
+
+    .skills-list li {
+        font-size: 12px;
+    }
+
+    .skill-detail {
+        font-size: 9px;
+    }
+
+    .project-desc,
+    .course-desc,
+    .about-text {
+        font-size: 11px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .subhead {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+
+    h2 {
+        font-size: 18px;
+        margin-top: 12px;
+        margin-bottom: 8px;
+    }
+}
